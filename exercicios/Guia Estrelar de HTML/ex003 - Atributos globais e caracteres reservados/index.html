@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   </title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        .carrinho{
+            color: brown;
+        }
+
+        #carrinho_1{
+            color: cornflowerblue;
+        }
+
+        #carrinho_2{
+            color: darkcyan;
+        }
+
+        #carrinho_3{
+            color:crimson;
+        }
+    </style>
+
+</head>
+
+<body">   
+    <!--
+        -class > pode se usar a class com mesmo nome nas div
+
+        -contenteditable
+        -data-*
+
+        -id > só pode usar um id com nomes diferentes para cada div
+
+        -style > tag para estilização
+
+        -tabinex > serve para navegar entre os campos da página através da tecla tab conforme a sequência definada nas propriedades do atributo
+
+        -title > serve para definir um titulo para um atributo. Quando o mouse ficar parado em cima do atributo, vai aparecer o nome ou título do atributo
+    -->
+
+    <div class="carrinho" tabindex="2" title="class carrinho">
+        conteúdo
+    </div>
+
+    <div class="carrinho" tabindex="3" title="class carrinho">
+        conteúdo
+    </div>
+
+    <div class="carrinho" tabindex="1" title="class carrinho">
+        conteúdo
+    </div>
+
+    <div class="carrinho" hidden>
+        <!--hidden esconde a div-->
+        conteúdo
+    </div>
+
+    <div id ="carrinho_1" tabindex="4" title="id carrinho 1">
+        conteúdo
+    </div>
+
+    <div id ="carrinho_2" tabindex="6" title="id carrinho 2">
+        conteúdo
+    </div>
+
+    <div id ="carrinho_3" tabindex="5" title="id carrinho 3">
+        conteúdo
+    </div>
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes">Conhecendo outros atributos globais</a>
+
+
+
+
+</body>
+
+</html>
