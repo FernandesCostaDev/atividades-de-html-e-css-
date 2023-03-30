@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*O estilo é lido de cima para baixo. No caso, a regra que prevaleceu, foi o ultimo estilo, cor azul.*/
+
+/*Ultimo estilo mais importante é esse do arquivo CSS*/
+h1{
+    color: red;
+}
+
+h1{
+    color: blue;
+}

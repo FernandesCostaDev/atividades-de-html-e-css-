@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*A prioridade do style nas especificidade será pelo valor e não pelo efeito cascata*/
+
+
+/*O valor do style Inline vale 1000, logo o que vai prevalecer é o style Inline.
+
+<h1 style="color: darkviolet;">Titulo</h1>  
+
+*/
+
+/*O valor do ID(my_title) vale 100, logo o que vai prevalecer é o style d0 ID.*/
+#my_title{
+    color: crimson;
+}
+
+/*O valor da class(title) vale 10, logo o que vai prevalecer é o style da classe.*/
+.title{
+    color: darkblue;
+}
+
+/*Element type selector tem valor 1. No caso de dois type selector iguais, segue a ordem cascata.*/
+h1{
+    color: blue;
+}
+
+h1{
+    color: brown;
+}
+
+/*Elemente universal selector tem valor 0. Como o type selector tem valor maior (h1) o style vai ser aplicado somente no parágrafo (p)*/
+*{
+    color: rgb(52, 151, 52);
+}
+

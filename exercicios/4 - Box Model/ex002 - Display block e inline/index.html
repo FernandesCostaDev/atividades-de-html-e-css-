@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block e inline</title>
+
+    <style>
+        /*heigth, width e border funcionam normalmente*/
+        #box_1{
+            height: 100px;
+            width: 10px;
+            border: 1px solid red;
+
+            /*Mudando o comportamento do display block para inline*/
+            display: inline;
+
+            /*Somente os valores horizontais de margim, border e padding irão funcionar no display inline*/
+
+            margin: 100px;
+            padding: 100px;
+        }
+
+        /*heigth, width e border não funcionam no inline*/
+        span {
+            height: 100px;
+            width: 10px;            
+            border: 1px solid green;
+
+            /*Mudando o comportamento do display inline para block*/
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body">   
+
+    <!--
+        Display Block vc Display Inline
+            #Display Block
+                *Ocupa toda a linha, colocando o próximo     elemento abaixo.
+                *width e heigth são respeitados.
+                *padding, margin, border irão funcionar normalmente.
+
+            #Display Inline
+                *Elemento ao lado do outro
+                *width e heigth não funcionam
+                *Somente valores horizontais de margin, padding e border    
+    -->
+
+    <div>Conteúdo 1 - Display block</div>
+    <div>Conteúdo 2 - Display block</div>
+
+    <strong>Conteúdo 3 - Display inline</strong>
+    <strong>Conteúdo 4 - Display inline</strong>
+    
+    <hr>
+
+    <div id="box_1">
+        block
+    </div>
+
+    <span>inline</span>
+
+</body>
+
+</html>

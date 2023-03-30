@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+
+    <style>
+
+        * {
+            /*Padrão é box-sizing: content-box, ou seja é adicionado 20px em cada lado do content. No final o box sizing não vai ter 100px de largura, mas 140px.
+            Essa configuração pode causar algum problema no futuro. Então configurar o box-sizing com border-box.
+            */
+            box-sizing: content-box;
+            box-sizing: border-box;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            border: black solid;
+            margin: 10px;
+            padding: 0px 20px;
+        }
+    </style>
+   
+
+</head>
+
+<body">   
+    <div>
+        <strong>CSS</strong> é inclivel
+    </div>
+</body>
+
+</html>

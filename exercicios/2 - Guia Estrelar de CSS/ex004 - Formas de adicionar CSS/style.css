@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*Dentro do style podemos usar o import. Como regra o import sempre deve estar no início da página style. No exemplo abaixo, vamos importar uma font do Google, porém náo é a mais indicada pois levara tempo até essa font vier do Google. O correto é baixar a fonte.*/
+
+@import'https://fonts.googleapis.com/css2?family=Ranchers&display=swap';
+
+body{
+    background-color: rgb(42, 119, 93);
+}
+
+h1{
+    color: black;
+    font-family: 'Ranchers', cursive;
+}
+
+strong{
+    color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

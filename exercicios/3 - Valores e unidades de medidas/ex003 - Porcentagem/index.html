@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem</title>   
+
+    <style>
+
+        /*O elemento body está com uma dimensão relativa(%) em 50% do elemento pai que é o root ou html*/
+        body {
+            width: 50%;
+        }
+
+        li {
+            font-size: 80%;
+        }
+
+         /*O elemento div está com uma dimensão absoluta de 100px tanto de largura como de altura.*/
+        div {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*No exemplo abaixo, o elemento div está com uma dimensão relativa de 100% referente ao seu elemento pai(body). Se mudar a dimensão do body, a dimensão relativa(%) do elemento filho via mudar também.*/
+        div {
+            background-color: red;
+            width: 50%;           
+        }
+    </style>
+
+</head>
+
+<body">   
+
+<!--
+    #Porcentagem %
+
+    * Em muitos casos é tratado da mesma maneira que as distâncias <lenght>
+    * Sempre será relativo a algum valor
+-->
+    
+    <ul>
+	    <li>One</li>
+	    <li>Two</li>
+	    <li>Three
+		    <ul>
+			    <li>Three A</li>
+			    <li>Three B</li>
+			        <ul>
+				        <li>Three B 2</li>
+			        </ul>
+                <li>Three C</li>
+		    </ul>
+	    </li>
+    </ul>
+
+    <div>
+        <h1>Titulo</h1>
+    </div>
+
+</body>
+
+</html>
